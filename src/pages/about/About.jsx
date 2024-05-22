@@ -4,6 +4,7 @@ import CV from "../../assets/akshata-CV.pdf"
 import "./about.css"
 import { resume } from '../../data'
 import ResumeItem from '../../components/ResumeItem'
+import Skills from '../../components/Skills'
 
 const About = () => {
   return (
@@ -43,7 +44,7 @@ const About = () => {
       <section className='skills'> 
       <h3 className="section__subtitle subtitle__center">My Skills</h3>
       <div className="skills__container grid">
-        Display Skill icons in a grid later
+        <Skills/>
       </div>
       </section>
       

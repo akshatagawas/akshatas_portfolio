@@ -77,3 +77,12 @@
     font-size: var(--h3-font-size);
     line-height: 64px;
 }
+.form-success {
+    color: green;
+    margin-top: 1rem;
+  }
+  
+  .form-error {
+    color: red;
+    margin-top: 1rem;
+  }

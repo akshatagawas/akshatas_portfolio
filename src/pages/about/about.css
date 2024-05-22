@@ -75,3 +75,14 @@
     font-size: var(--small-font-size);
     line-height: 1.6;
 }
+.skills__container{
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    row-gap: 48px;
+}
+.skills__icon{
+    width: 120px;
+    height: 120px;
+    font-size: 5rem;
+    color: var(--first-color);
+}

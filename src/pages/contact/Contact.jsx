@@ -4,8 +4,50 @@ import { FaEnvelopeOpen, FaLinkedin , FaGithub , FaYoutube } from 'react-icons/f
 import { SiLeetcode } from "react-icons/si";
 import { FiSend } from 'react-icons/fi'
 import './contact.css'
+import { useState, useEffect } from 'react';
+
 
 const Contact = () => {
+
+  const [status, setStatus] = useState('');
+
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => {
+        setStatus('');
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      if (response.ok) {
+        form.reset();
+        setStatus('SUCCESS');
+      } else {
+        setStatus('ERROR');
+      }
+    } catch (error) {
+      setStatus('ERROR');
+    }
+  };
+
+
+
+
+
   return (
     <section className="section contact">
       <h2 className="section__title">
@@ -51,32 +93,34 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="contact__form">
+        <form className="contact__form" action='https://formspree.io/f/xwkgjoza' method='POST' onSubmit={handleSubmit}>
           <div className="form__input-group">
 
             <div className="form__input-div">
-              <input type='text' placeholder='Your Name' className='form__control'></input>
+              <input type='text' placeholder='Your Name' className='form__control' required></input>
             </div>
 
             <div className="form__input-div">
-              <input type='email' placeholder='Your Email' className='form__control'/> 
+              <input type='email' placeholder='Your Email' className='form__control' required/> 
             </div>
 
             <div className="form__input-div">
-              <input type='text' placeholder='Your Subject' className='form__control'/>
+              <input type='text' placeholder='Your Subject' className='form__control' required/>
             </div>
 
           </div>
 
           <div className="form__input-div">
-            <textarea placeholder='Your Message' className='form__control textarea'></textarea>
+            <textarea placeholder='Your Message' className='form__control textarea' required></textarea>
           </div>
 
-          <button className='button'>
+          <button className='button' type='submit'>
             Send Message
             <span className='button__icon contact__button-icon'>
               <FiSend/>
             </span>
+            {status === 'SUCCESS' && <p className="form-success">Thanks! Your message has been sent.</p>}
+          {status === 'ERROR' && <p className="form-error">Oops! There was an error sending your message.</p>}
           </button>
         </form>
       </div>

@@ -9,6 +9,15 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
+/* Skill icons */
+import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaPython, FaJava, FaDocker } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { DiMysql, DiMongodb  } from "react-icons/di";
+import { AiOutlineKubernetes } from "react-icons/ai";
+
+
+
 import Work1 from './assets/project-1.jpeg';
 import Work2 from './assets/project-2.jpg';
 import Work3 from './assets/project-3.jpeg';
@@ -57,94 +66,6 @@ export const links = [
   },
 ];
 
-export const personalInfo = [
-  {
-    id: 1,
-    title: 'First Name : ',
-    description: 'Steve',
-  },
-
-  {
-    id: 2,
-    title: 'Last Name : ',
-    description: 'Milner',
-  },
-
-  {
-    id: 3,
-    title: 'Age : ',
-    description: '27 Years',
-  },
-
-  {
-    id: 4,
-    title: 'Nationality : ',
-    description: 'Tunisian',
-  },
-
-  {
-    id: 5,
-    title: 'Freelance : ',
-    description: 'Available',
-  },
-
-  {
-    id: 6,
-    title: 'Address : ',
-    description: 'Tunis',
-  },
-
-  {
-    id: 7,
-    title: 'Phone : ',
-    description: '+21621184010',
-  },
-
-  {
-    id: 8,
-    title: 'Email : ',
-    description: 'you@mail.com',
-  },
-
-  {
-    id: 9,
-    title: 'Skype : ',
-    description: 'steve.milner',
-  },
-
-  {
-    id: 10,
-    title: 'Langages : ',
-    description: 'French, English',
-  },
-];
-
-export const stats = [
-  {
-    id: 1,
-    no: '12+',
-    title: 'Years of <br /> Experience',
-  },
-
-  {
-    id: 2,
-    no: '97+',
-    title: 'Completed <br /> Projects',
-  },
-
-  {
-    id: 3,
-    no: '81+',
-    title: 'Happy <br /> Customers',
-  },
-
-  {
-    id: 4,
-    no: '53+',
-    title: ' Awards <br /> Won',
-  },
-];
-
 export const resume = [
   {
     id: 1,
@@ -189,50 +110,75 @@ export const skills = [
   {
     id: 1,
     title: 'Html',
-    percentage: '25',
+    icon: <FaHtml5 />,
   },
 
   {
     id: 2,
     title: 'Javascript',
-    percentage: '89',
+    icon: <IoLogoJavascript />,
   },
 
   {
     id: 3,
     title: 'Css',
-    percentage: '70',
+    icon: <FaCss3 />,
   },
 
   {
     id: 4,
-    title: 'Php',
-    percentage: '66',
+    title: 'React',
+    icon: <FaReact />,
   },
 
   {
     id: 5,
-    title: 'Wordpress',
-    percentage: '95',
+    title: 'Spring Boot',
+    icon: <BiLogoSpringBoot />,
   },
 
   {
     id: 6,
-    title: 'Jquery',
-    percentage: '50',
+    title: 'NodeJS',
+    icon: <FaNodeJs />,
   },
 
   {
     id: 7,
-    title: 'Angular',
-    percentage: '65',
+    title: 'Python',
+    icon: <FaPython />,
   },
 
   {
     id: 8,
-    title: 'React',
-    percentage: '45',
+    title: 'Java',
+    icon: <FaJava />,
   },
+
+  {
+    id: 9,
+    title: 'SQL',
+    icon: <DiMysql />,
+  },
+  {
+    id: 10,
+    title: 'MongoDB',
+    icon: <DiMongodb />
+  },
+
+  {
+    id: 11,
+    title: 'Docker',
+    icon: <FaDocker  />,
+  },
+
+  {
+    id: 12,
+    title: 'Kubernetes',
+    icon: <AiOutlineKubernetes />
+    ,
+  },
+
 ];
 
 export const projects = [
