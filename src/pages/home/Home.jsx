@@ -15,10 +15,7 @@ const Home = () => {
                     <span>I'm Akshata Gawas.</span>  Software Developer
                 </h1>
                 <p className="home__description">
-                    Hello! I am Akshata Gawas, and I have a passion for using computer technology to tackle real-world problems. 
-                    Currently, I am pursuing a Computer Science degree at Indiana University Bloomington. 
-                    I am enthusiastic about connecting with professionals and exploring opportunities to contribute to innovative projects. 
-                    Let us connect and discuss how we can work together to make a meaningful impact!
+                Full-stack developer with a passion for building innovative solutions. Skilled in ReactJS, Spring Boot, and various cloud platforms (AWS, GCP). Experience in both frontend and backend development.
                 </p>
                 <Link to='/about' className='button'>
                     More About Me{' '}

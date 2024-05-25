@@ -12,6 +12,7 @@ const Projects = () => {
         {projects.map((item) => {
           return <ProjectItems key={item.id} {...item}/>;
         })}
+        And much more....
       </div>
     </section>
   )
