@@ -18,12 +18,12 @@ import { AiOutlineKubernetes } from "react-icons/ai";
 
 
 
-import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpeg';
-import Work4 from './assets/project-4.jpeg';
-import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
+import Work1 from './assets/project-1.png';
+import Work2 from './assets/project-2.png';
+import Work3 from './assets/project-3.png';
+import Work4 from './assets/project-4.jpg';
+import Work5 from './assets/project-5.png';
+import Work6 from './assets/project-6.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -185,27 +185,27 @@ export const projects = [
   {
     id: 1,
     img: Work1,
-    title: 'Photo Editing',
+    title: 'Portfolio in Vite + ReactJS',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'Responsive Website in ReactJS',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Personal Project',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        desc: 'Vite + ReactJS',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://akshatagawas.github.io/akshatas_portfolio',
       },
     ],
   },
@@ -213,27 +213,27 @@ export const projects = [
   {
     id: 2,
     img: Work2,
-    title: 'Website Design',
+    title: 'Health Harbor',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Website',
+        desc: 'Patient and Insuarance Management Website',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Academic Project',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'React JS',
+        desc: 'React + Spring Boot + MySQL',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://drive.google.com/file/d/1LWB_qumxfyBTcgXe-AkzAu7aAU1UvjDV/view?usp=drive_link',
       },
     ],
   },
@@ -241,27 +241,27 @@ export const projects = [
   {
     id: 3,
     img: Work3,
-    title: 'Video Editing',
+    title: 'BlogSite',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'Website for Tech Blogs',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Personal Project',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'MERN stack',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://github.com/akshatagawas/blogsite',
       },
     ],
   },
@@ -269,27 +269,27 @@ export const projects = [
   {
     id: 4,
     img: Work4,
-    title: 'Video Editing',
+    title: 'Crypto Tracker',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'Website to track Crypto Prices',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Personal Project',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'ReactJS + ChartJS + MUI',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://crypto-hunter.netlify.app/',
       },
     ],
   },
@@ -297,23 +297,23 @@ export const projects = [
   {
     id: 5,
     img: Work5,
-    title: 'Landing Page',
+    title: 'Customer Repository',
     details: [
       {
         title: 'Project : ',
-        desc: 'Website',
+        desc: 'CRUD operations ',
       },
       {
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Personal Project',
       },
       {
         title: 'Language : ',
-        desc: 'React JS, Node JS',
+        desc: 'MEAN Stack',
       },
       {
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://github.com/akshatagawas/mean-stack-application',
       },
     ],
   },
@@ -321,27 +321,27 @@ export const projects = [
   {
     id: 6,
     img: Work6,
-    title: 'Photo Editing',
+    title: 'EKS Cluster Deployment',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'Deploy app on EKS using Python',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Personal Project',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        desc: 'AWS EKS, Docker, Python',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dibble.com',
+        desc: 'https://github.com/akshatagawas/EKS-deployment-with-Python',
       },
     ],
   },
