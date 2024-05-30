@@ -73,7 +73,7 @@ export const resume = [
     icon: <FaBriefcase />,
     year: 'June 2023 - August 2023',
     title: 'Software Engineering Intern <span> Tech For Good Inc. </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+    desc: 'Kubernetes, Docker, AWS, GCP',
   },
 
   {
@@ -82,7 +82,7 @@ export const resume = [
     icon: <FaBriefcase />,
     year: 'December 2021 - March 2022',
     title: 'Full Stack Developer Intern <span> Virtusa Pvt. Ltd. </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    desc: 'Spring Boot, ReactJS, MySQL, RESTful APIs',
   },
 
   {
